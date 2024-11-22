@@ -12,8 +12,10 @@ const AppContextProvider = (props) => {
    const [credit, setCredit] = useState(false)
    const [image, setImage] = useState(false)
    const [resultImage, setResultImage] = useState(false)
+   const [output,setOutput] = useState()
 
    const backendUrl = import.meta.env.VITE_BACKEND_URL
+   const backUrl = import.meta.env.VITE_BACK_URL
    const navigate = useNavigate()
 
    const { getToken } = useAuth()
@@ -51,7 +53,9 @@ const AppContextProvider = (props) => {
            const formData = new FormData()
            image && formData.append('image',image)
 
-           const {data} = await axios.post(backendUrl+'/api/image/remove-bg',formData, {headers:{token}})
+           const {data} = await axios.post(backUrl+'/detect-signboards',formData, {headers:{"Content-Type": "multipart/form-data"}})
+           console.log(data);
+           setOutput(data);
            
             if (data.success) {
                 setResultImage(data.resultImage)
