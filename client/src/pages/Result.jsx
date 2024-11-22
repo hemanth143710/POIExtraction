@@ -4,8 +4,9 @@ import { AppContext } from '../context/AppContext'
 
 const Result = () => {
 
-  const { resultImage, image } = useContext(AppContext);
-
+  const { resultImage, image, output } = useContext(AppContext);
+  console.log('jdsghaj');
+  console.log(output);
   return (
     <div className='mx-4 my-3 lg:mx-44 mt-14 min-h-[75vh]'>
           
@@ -22,7 +23,7 @@ const Result = () => {
 
                        {/* ------- Right Side ------ */}
                        <div className='flex flex-col'>
-                           <p className='font-semibold text-gray-600 mb-2'>Background Removed</p>
+                           {/* <p className='font-semibold text-gray-600 mb-2'>Background Removed</p>
                            <div className='rounded-md border border-gray-300 h-full relative bg-layer overflow-hidden'>
                               <img src={resultImage ? resultImage : ''} alt="" />
                               {
@@ -31,7 +32,8 @@ const Result = () => {
                                 </div>
                               </div>
                               }
-                           </div>
+                           </div> */}
+                           <h1>{}</h1>
                        </div>
                   </div>
                  
