@@ -33,6 +33,8 @@ import codeGeneration from './Best_AI_Code_Generators.avif';
 import financialPredictions from './finacialpredictor.png';
 import medicalImaging from './medicalimages.jpeg';
 import documentProcessing from './documentprocessing.jpg';
+import essentialpredictive from './essential-predictive.jpg';
+
 
 export const assets = {
     logo,
@@ -67,7 +69,9 @@ export const assets = {
     codeGeneration,
     financialPredictions,
     medicalImaging,
-    documentProcessing
+    documentProcessing,
+    essentialpredictive
+    
 }
 
 export const testimonialsData = [

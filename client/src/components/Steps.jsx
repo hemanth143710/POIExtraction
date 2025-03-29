@@ -56,6 +56,12 @@ const Offerings = () => {
       image: assets.chatBot
     },
     {
+      title: "AI-Powered Data Prediction",
+      description: "Leverage AI to analyze historical data and predict future trends. Upload datasets like sales records, stock market data, customer churn, healthcare insights, weather patterns, or financial transactions to uncover valuable forecasts and data-driven insights.",
+      path: "/data-prediction",
+      image: assets.essentialpredictive
+    },
+    {
       title: "Image to Address API",
       description: "Uses computer vision to extract and interpret address details from images for location-based applications.",
       path: "/image-to-address-api",

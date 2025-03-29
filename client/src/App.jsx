@@ -16,6 +16,7 @@ import CodeGeneration from './pages/CodeGeneration';
 import FinancialPredictions from './pages/FinancialPredictions';
 import MedicalImaging from './pages/MedicalImaging';
 import DocumentProcessing from './pages/DocumentProcessing';
+import AIPoweredDataPrediction from './pages/AIPoweredDataPrediction';
 
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -47,6 +48,7 @@ const App = () => {
           <Route path='/financial-predictions' element={<FinancialPredictions />} />
           <Route path='/medical-imaging' element={<MedicalImaging />} />
           <Route path='/document-processing' element={<DocumentProcessing />} />
+          <Route path='/data-prediction' element={<AIPoweredDataPrediction />} />
        </Routes>
        <Footer/>
     </div>
